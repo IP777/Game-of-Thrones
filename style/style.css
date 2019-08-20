@@ -11,7 +11,8 @@ body{
 }
 
 .center{
-    cursor: move;
+    /* cursor: move; */
+    cursor: url(../image/2mvg.png), auto;
 }
 
 .right_left{
@@ -39,6 +40,7 @@ td{
     height: 40px;
     border: 1px solid;
     border-radius: 10px;
+    cursor: url(../image/2mvg.png), auto;
 }
 
 .stena{
