@@ -10,19 +10,6 @@ body{
     font-size: 12px
 }
 
-.center{
-    /* cursor: move; */
-    cursor: url(../image/2mvg.png), auto;
-}
-
-.right_left{
-    cursor : ew-resize;
-}
-
-.up_down{
-    cursor: s-resize;
-}
-
 table{
     border-collapse: collapse;
     margin: 0 auto;
