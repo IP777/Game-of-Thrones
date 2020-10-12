@@ -41,8 +41,7 @@ td {
 }
 
 .stena:hover:after,
-.finish:hover:after,
-.enemy :hover:after {
+.finish:hover:after {
 	display: block;
 	position: absolute;
 	width: 440px;
@@ -55,11 +54,26 @@ td {
 	padding-top: 205px;
 	text-align: center;
 }
+.enemy:hover:after {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(160%);
+	font-family: "Game_of_Thron", serif;
+	font-size: 25px;
+	text-align: center;
+}
 
-.stena:hover:after,
-.enemy :hover:after {
+.stena:hover:after {
 	content: "You lose.";
 	background-color: rgba(177, 52, 14, 0.808);
+}
+
+.enemy:hover:after {
+	content: "Winter is comig...";
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.808);
+	opacity: 0.9;
 }
 
 .start {
