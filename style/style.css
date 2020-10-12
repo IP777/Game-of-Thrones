@@ -56,7 +56,8 @@ td {
 	text-align: center;
 }
 
-.stena:hover:after {
+.stena:hover:after,
+.enemy :hover:after {
 	content: "You lose.";
 	background-color: rgba(177, 52, 14, 0.808);
 }
