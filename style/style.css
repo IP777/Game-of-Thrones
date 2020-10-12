@@ -1,80 +1,81 @@
 @font-face {
-    font-family: 'Game_of_Thron';
-    src: url('../font/Game_of_Thrones.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Game_of_Thron";
+	src: url("../font/Game_of_Thrones.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
-body{
-    font-family: 'Game_of_Thron', serif;
-    font-size: 12px
+body {
+	font-family: "Game_of_Thron", serif;
+	font-size: 12px;
 }
 
-table{
-    border-collapse: collapse;
-    margin: 0 auto;
-    margin-bottom: 50px;
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
-caption{
-    padding: 20px;
-    font-family: 'Game_of_Thron', serif;
-    font-size: 25px;
+caption {
+	padding: 20px;
+	font-family: "Game_of_Thron", serif;
+	font-size: 25px;
 }
 
-td{
-    width: 40px;
-    height: 40px;
-    border: 1px solid;
-    border-radius: 10px;
-    cursor: url(../image/2mvg.png), auto;
+td {
+	width: 40px;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 10px;
+	cursor: url(../image/2mvg.png), auto;
 }
 
-.stena{
-    /* border: 1px solid; */
-    background-color: rgb(15, 94, 39);
-    background: url(https://clipart-db.ru/file_content/rastr/grass_018.jpg);
+.stena {
+	/* border: 1px solid; */
+	background-color: rgb(15, 94, 39);
+	background: url(https://clipart-db.ru/file_content/rastr/grass_018.jpg);
 }
 
-.stena:hover:after, .finish:hover:after{
-    display: block;
-    position: absolute;
-    width: 440px;
-    height: 265px;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Game_of_Thron', serif;
-    font-size: 25px;
-    padding-top: 205px;
-    text-align: center;
+.enemy {
+	background: url(../image/enemy-s.jpg) no-repeat center;
 }
 
-.stena:hover:after{
-    content: "You lose.";  
-    background-color: rgba(177, 52, 14, 0.808);  
+.stena:hover:after,
+.finish:hover:after,
+.enemy :hover:after {
+	display: block;
+	position: absolute;
+	width: 440px;
+	height: 265px;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-family: "Game_of_Thron", serif;
+	font-size: 25px;
+	padding-top: 205px;
+	text-align: center;
 }
 
-.start{
-    text-align: center;
-    background-color: rgb(83, 182, 182);
+.stena:hover:after {
+	content: "You lose.";
+	background-color: rgba(177, 52, 14, 0.808);
 }
 
-.finish{
-    background-color: rgba(238, 255, 0, 0.836);
+.start {
+	text-align: center;
+	background-color: rgb(83, 182, 182);
 }
 
-.finish:hover:after{
-    content: "You Win";
-    background-color: rgba(14, 158, 177, 0.555);
+.finish {
+	background-color: rgba(238, 255, 0, 0.836);
 }
 
-audio{
-    display: block;
-    margin: 0 auto;
+.finish:hover:after {
+	content: "You Win";
+	background-color: rgba(14, 158, 177, 0.555);
 }
 
-.enemy{
-    background: url(../image/enemy-s.jpg) no-repeat center;
+audio {
+	display: block;
+	margin: 0 auto;
 }
-
